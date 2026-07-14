@@ -6,7 +6,7 @@ An artificial neural network (ANN) based surrogate model and NSGA-II multi-objec
 
 
 
-\## Overview
+\# Overview
 
 
 
@@ -44,7 +44,7 @@ This project models the effect of electric motor design parameters (pole/slot co
 
 
 
-\## Files
+\# Files
 
 
 
@@ -64,7 +64,7 @@ This project models the effect of electric motor design parameters (pole/slot co
 
 \- `Results/dogrulama\_sonuc.csv` — Validation results for the selected design.
 
-\##Results
+\# Results
 
 Comparison of ANN-predicted values against actual RMxprt simulation results for all four outputs (Airgap Flux, Cogging Torque, Efficiency, Torque):
 
@@ -78,7 +78,7 @@ Pairwise scatter plots of the Pareto-optimal designs (Torque vs Cogging, Efficie
 
 ![Pairwise Pareto Views](images/dual_pareto.png)
 
-\## Note
+\# Note
 
 
 
@@ -86,7 +86,7 @@ The PyAEDT scripts used for RMxprt simulation automation have not been added to 
 
 
 
-\## Requirements
+\# Requirements
 
 
 
@@ -96,7 +96,7 @@ The PyAEDT scripts used for RMxprt simulation automation have not been added to 
 
 
 
-\## License
+\# License
 
 
 
