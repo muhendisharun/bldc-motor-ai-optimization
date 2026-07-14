@@ -64,7 +64,19 @@ This project models the effect of electric motor design parameters (pole/slot co
 
 \- `Results/dogrulama\_sonuc.csv` — Validation results for the selected design.
 
+Results
 
+Comparison of ANN-predicted values against actual RMxprt simulation results for all four outputs (Airgap Flux, Cogging Torque, Efficiency, Torque):
+
+![ANN Prediction vs Actual](images/tahmin_gercek.png)
+
+3D Pareto front showing the trade-off between airgap flux density, cogging torque, and efficiency:
+
+![Pareto Front](images/pareto_front.png)
+
+Pairwise scatter plots of the Pareto-optimal designs (Torque vs Cogging, Efficiency vs Cogging, Torque vs Efficiency):
+
+![Pairwise Pareto Views](images/dual_pareto.png)
 
 \## Note
 
