@@ -14,19 +14,19 @@ This project models the effect of electric motor design parameters (pole/slot co
 
 
 
-1\. \*\*Data collection\*\* — Balanced exploration of the design space using Latin Hypercube Sampling (LHS), with output data obtained from RMxprt (Ansys AEDT) simulations.
+1\. Data collection — Balanced exploration of the design space using Latin Hypercube Sampling (LHS), with output data obtained from RMxprt (Ansys AEDT) simulations.
 
-2\. \*\*Data cleaning\*\* — Removal of designs with demagnetization or physically inconsistent results from the dataset.
+2\. Data cleaning — Removal of designs with demagnetization or physically inconsistent results from the dataset.
 
-3\. \*\*ANN training\*\* — Training a feedforward neural network on the cleaned dataset using the Levenberg-Marquardt algorithm, producing a fast surrogate model for motor performance prediction.
+3\. ANN training — Training a feedforward neural network on the cleaned dataset using the Levenberg-Marquardt algorithm, producing a fast surrogate model for motor performance prediction.
 
-4\. \*\*NSGA-II optimization\*\* — Finding Pareto-optimal design candidates using a multi-objective genetic algorithm on top of the trained ANN model.
+4\. NSGA-II optimization — Finding Pareto-optimal design candidates using a multi-objective genetic algorithm on top of the trained ANN model.
 
-5\. \*\*Decision-making with TOPSIS\*\* — Selecting the final design among the Pareto front candidates using multi-criteria decision analysis.
+5\. Decision-making with TOPSIS — Selecting the final design among the Pareto front candidates using multi-criteria decision analysis.
 
 
 
-\## Folder Structure
+\# Folder Structure
 
 
 
@@ -44,7 +44,7 @@ This project models the effect of electric motor design parameters (pole/slot co
 
 
 
-\### Files
+\## Files
 
 
 
@@ -64,7 +64,7 @@ This project models the effect of electric motor design parameters (pole/slot co
 
 \- `Results/dogrulama\_sonuc.csv` — Validation results for the selected design.
 
-Results
+\##Results
 
 Comparison of ANN-predicted values against actual RMxprt simulation results for all four outputs (Airgap Flux, Cogging Torque, Efficiency, Torque):
 
@@ -101,4 +101,3 @@ The PyAEDT scripts used for RMxprt simulation automation have not been added to 
 
 
 This project is licensed under the MIT License. See the `LICENSE` file for details.
-
