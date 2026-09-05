@@ -1,16 +1,16 @@
-\# BLDC Motor AI Optimization
+BLDC Motor AI Optimization
 
 
 
-An artificial neural network (ANN) based surrogate model and NSGA-II multi-objective genetic algorithm optimization study for brushless DC (BLDC) motor design.
+An artificial neural network based surrogate model and NSGA-II multi-objective genetic algorithm optimization study for brushless DC (BLDC) motor design.
 
 
 
-\# Overview
+Overview
 
 
 
-This project models the effect of electric motor design parameters (pole/slot combination, magnet thickness, embrace ratio, slot type, steel type, etc.) on motor performance outputs (flux, cogging torque, torque, efficiency) and searches for the best design through the following pipeline:
+This project models the effect of electric motor design parameters on motor performance outputs (flux, cogging torque, torque, efficiency) and searches for the best design through the following pipeline:
 
 
 
@@ -26,26 +26,9 @@ This project models the effect of electric motor design parameters (pole/slot co
 
 
 
-\# Folder Structure
 
 
-
-```
-
-├── Automation/       # Python script for analyzing simulation outputs
-
-├── MATLAB/           # ANN training, NSGA-II, and decision-making scripts
-
-├── Data Set/         # Processed dataset used for training
-
-├── Results/          # Pareto results, TOPSIS ranking, validation results
-
-```
-
-
-
-\# Files
-
+Files
 
 
 \- `Automation/Analiz\_Edici.py` — Python script for analyzing simulation/optimization outputs.
@@ -64,6 +47,7 @@ This project models the effect of electric motor design parameters (pole/slot co
 
 \- `Results/dogrulama\_sonuc.csv` — Validation results for the selected design.
 
+
 \# Results
 
 Comparison of ANN-predicted values against actual RMxprt simulation results for all four outputs (Airgap Flux, Cogging Torque, Efficiency, Torque):
@@ -78,26 +62,9 @@ Pairwise scatter plots of the Pareto-optimal designs (Torque vs Cogging, Efficie
 
 ![Pairwise Pareto Views](images/dual_pareto.png)
 
-\# Note
-
-
 
 The PyAEDT scripts used for RMxprt simulation automation have not been added to this repository yet; this repository currently covers the data analysis, ANN training, and optimization steps.
 
 
 
-\# Requirements
 
-
-
-\- MATLAB (Optimization Toolbox, Deep Learning Toolbox)
-
-\- Python 3.x (basic libraries such as pandas, numpy)
-
-
-
-\# License
-
-
-
-This project is licensed under the MIT License. See the `LICENSE` file for details.
